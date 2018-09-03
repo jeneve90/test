@@ -1,0 +1,25 @@
+#intro .introWrap .lion{
+	animation: spinLion 1500ms linear infinite alternate;
+}
+
+@keyframes spinLion{
+	from{
+		transform: rotate(-10deg);
+	}
+	to{
+		transform:rotate(10deg);
+	}
+}
+
+#intro .cloudWrap .dragonfly{
+	animation: flyDragonFly 7s linear infinite;
+}
+
+@keyframes flyDragonFly{
+	from{
+		left:-366px;
+	}
+	to{
+		left:110%;
+	}
+}
