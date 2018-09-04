@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>커피니</title>
+    <link rel="stylesheet" type="text/css" href="maincss/index.css">
+    <link rel="stylesheet" type="text/css" href="maincss/reset.css"> 
+    <link href="maincss/jquery.bxslider.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="maincss/swiper.min.css">
+    <script type="text/javascript" src="mainjs/jquery-3.3.1.min.js"></script>
+    <script src="mainjs/swiper.min.js"></script>
+    
+    
+    <!-- jQuery library -->
+    <!-- bxSlider Javascript file -->
+    <script src="mainjs/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                mode: 'horizontal',
+                moveSlides: 1,
+                slideMargin: 40,
+                infiniteLoop: true,
+                slideWidth: 1920,
+                minSlides: 1,
+                maxSlides: 1,
+                speed: 800,
+            });
+        });
+    </script>
+    
+    
+    </head>
+    
+    <body>
+        <div id="main-wrap">
+            <a href="#content" class="skipToContent">본문으로 바로가기</a>
+            <header>
+                <div class="head-top">
+                    
+                    <h1><a href="index.html"><img src="mainimages/logo.jpg" alt="커피니로고"></a></h1>
+                    <ul class="top-btn">
+                        <li class="btn-list"><a href="#">로그인</a></li>
+                        <li class="btn-list"><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+                
+                    <nav id="nav-wrap">
+                        
+                        <button class="Allmenu-btn" type="button"><span>전체메뉴열기</span></button>
+                        
+                        <section id="Allmenu-board">
+                            
+                            <div class="all-list">
+                                <h3>COFFEENIE</h3>
+                                <ul>
+                                    <li><a href="#">브랜드소개</a></li>
+                                    <li><a href="#">커피니소식</a></li>
+                                    <li><a href="#">광고자료</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">제휴문의</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>PRODUCT</h3>
+                                <ul>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">푸드&디저트</a></li>
+                                    <li><a href="#">기타제품</a></li>
+                                    <li><a href="#">영양성분안내</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>STORES</h3>
+                                <ul>
+                                    <li><a href="#">매장안내</a></li> 
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>SERVICE</h3>
+                                <ul>
+                                    <li><a href="#">커피니 렌탈서비스</a></li>
+                                    <li><a href="#">렌탈서비스 상담신청</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>EVENT</h3>
+                                <ul>
+                                    <li><a href="#">커피니 이벤트</a></li>
+                                    <li><a href="#">매장별 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li> 
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>MEMBERSHIP</h3>
+                                <ul>
+                                    <li><a href="#">커피니 멤버십</a></li>
+                                    <li><a href="#">포인트</a></li>
+                                    <li><a href="#">고객의 소리</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="all-list">
+                                <h3>FRANCHISE</h3>
+                                <ul>
+                                    <li><a href="#">가맹개설안내</a></li>
+                                    <li><a href="#">가맹개설절차</a></li>
+                                    <li><a href="#">인테리어</a></li>
+                                    <li><a href="#">투자비용 및 프랜차이즈론</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">가맹상담신청</a></li>
+                                </ul>
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                  $('.Allmenu-btn').click(function(){
+                                    if($('.Allmenu-btn').hasClass('Allmenu-btn')){
+                                       $('.Allmenu-btn').addClass('close').removeClass('Allmenu-btn');
+                                       $('#Allmenu-board').css('visibility', 'visible');
+                                    }else if($('.close').hasClass('close')){
+                                       $('.close').addClass('Allmenu-btn').removeClass('close');  
+                                       $('#Allmenu-board').css('visibility', 'hidden');
+                                    }
+                                  });
+                                });
+                            </script>
+                        </section>
+                        
+                        <ul class="navmenu-list">
+                            <li><a href="#">COFFEENIE</a>
+                                <ul>
+                                    <li><a href="#">브랜드소개</a></li>
+                                    <li><a href="#">커피니소식</a></li>
+                                    <li><a href="#">광고자료</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">제휴문의</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PRODUCT</a>
+                                <ul>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">푸드&디저트</a></li>
+                                    <li><a href="#">기타제품</a></li>
+                                    <li><a href="#">영양성분안내</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">STORES</a>
+                                <ul>
+                                    <li><a href="#">매장안내</a></li> 
+                                </ul>
+                            </li>
+                            <li><a href="#">SERVICE</a>
+                                <ul>
+                                    <li><a href="#">커피니 렌탈서비스</a></li>
+                                    <li><a href="#">렌탈서비스 상담신청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">EVENT</a>
+                                <ul>
+                                    <li><a href="#">커피니 이벤트</a></li>
+                                    <li><a href="#">매장별 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li> 
+                                </ul>
+                            </li>
+                            <li><a href="#">MEMBERSHIP</a>
+                                <ul>
+                                    <li><a href="#">커피니 멤버십</a></li>
+                                    <li><a href="#">포인트</a></li>
+                                    <li><a href="#">고객의 소리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FRANCHISE</a>
+                                <ul>
+                                    <li><a href="#">가맹개설안내</a></li>
+                                    <li><a href="#">가맹개설절차</a></li>
+                                    <li><a href="#">인테리어</a></li>
+                                    <li><a href="#">투자비용 및 프랜차이즈론</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">가맹상담신청</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                
+            </header>
+
+            <section id="sec01">
+                <ul class="bxslider">
+                  <li><img src="mainimages/main_slide01.jpg" alt="summer fruit juice 이미지"/></li>
+                  <li><img src="mainimages/main_slide01.jpg" /></li>
+                  <li><img src="mainimages/main_slide01.jpg" /></li>
+                </ul>
+            </section>
+            <!--//sec01-->
+            
+            <section id="sec02">
+                <div class="main-top">
+                    
+                    <div class="brand-intro">
+                        <h2>브랜드 소개</h2>
+                        <p>커피니 브랜드를 소개합니다.</p>                      
+                        <a href="#">보러가기</a>                        
+                    </div>
+                    <div class="franchise">
+                        <h2>프랜차이즈</h2>
+                        <p>프랜차이즈 대출을 <br> 지원 해드립니다.</p>
+                        <a href="#">보러가기</a>  
+                    </div>
+                    <div class="affiliate">
+                        <h2>가맹문의</h2>
+                        <p><strong>02-546-1325</strong></p>
+                        <p>커피:니 취업상담을 <br> 희망하는 예비가족점<br>여러분을 도와드리겠습니다.</p>
+                        <a href="#">보러가기</a>  
+                    </div>
+                    
+                    <div class="membership">
+                        
+                        <h2>로그인</h2>
+                        
+                        <form action="#" method="post" name="log">
+                            
+                            <fieldset>
+                                <legend>로그인 정보입력</legend>
+                                
+                                <div class="uid">
+                                    <label for="uid">아이디</label>
+                                    <input type="text" id="uid" name="uid" placeholder="아이디">
+                                </div>
+                                
+                                <div class="pwd">
+                                    <label for="pwd">비밀번호</label>
+                                    <input type="text" id="pwd" name="pwd" placeholder="비밀번호">
+                                </div>
+                                
+                            </fieldset>
+                            
+                            <div class="member-search">
+                                <a href="#" class="left">회원가입</a>
+                                <a href="#" class="right">아이디/비밀번호찾기</a>
+                            </div>
+                            
+                            <button class="login-btn" type="button">로그인</button>
+                            
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <!--//sec02-->
+            
+            <section id="sec03">
+                <div class="newmenu-tit">
+                        
+                    <h2>NEW MENU</h2>
+                        
+                </div>
+                <!-- Swiper -->
+                
+                <div class="swiper-container">
+                    
+                    <ul class="swiper-wrapper">
+                        
+                      <li class="swiper-slide"><a href="#"><img src="mainimages/newmenu_slide01.jpg" alt="배스무디"></a></li>
+                      <li class="swiper-slide"><a href="#"><img src="mainimages/newmenu_slide02.jpg" alt="청포도스무디"></a></li>
+                      <li class="swiper-slide"><a href="#"><img src="mainimages/newmenu_slide03.jpg" alt="자두스무디"></a></li>
+                      <li class="swiper-slide"><a href="#"><img src="mainimages/newmenu_slide04.jpg" alt="복숭아스무디"></a></li>                     
+                    </ul>
+                      
+                </div>
+                
+                <!-- Add Arrows -->
+                <div class="swiper-button-wrap">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!-- Add Pagination -->
+                <div class="pagination-wrap">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Initialize Swiper -->
+                  <script>
+                    var swiper = new Swiper('.swiper-container', {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                      loop: true,
+                      pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      },
+                    });
+                  </script>
+            </section>
+            <!--//sec03-->
+            
+            <section id="sec04">
+                
+                <div class="main-middle">
+                    
+                    <div class="search-cafe">
+                        
+                        <div class="search-wrap">
+                            <h2>매장안내</h2>
+
+                            <p>가까운 커피니의 매장을 찾아보세요!</p>
+
+                            <form action="#" method="post" name="frm">
+                                <fieldset>
+                                    <legend>매장검색창</legend>
+                                    <div class="search-box">
+                                        <label>매장찾기</label>
+                                        <input type="text" id="caf" name="caf" placeholder="매장찾기">
+                                    </div>
+                                </fieldset>
+                                <button class="search-btn" type="button">검색</button>
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="newsboard">
+                        
+                        <div class="board-wrap">
+                            
+                            <h2>커피니소식</h2>
+
+                            <ul>
+                                <li><a href="#">커피니, 가을시즌음료 '마이 소울 라떼 출시'</a><span>2018-09-14</span></li>
+                                <li><a href="#">커피 프랜차이즈 기업 커피니, 프랜차이즈 모집에 박차</a><span>2018-08-07</span></li>
+                                <li><a href="#">[PRESS] atti CHINA vol.59 8월호</a><span>2018-08-01</span></li>
+                                <li><a href="#">커피니, 가볍게 즐길 수 있는 3종 컵빙수 출시</a><span>2018-07-07</span></li>
+                                <li><a href="#">커피니, 이탈리아 탄산수로 한층 더 업그레이드 된 스파...</a><span>2018-06-01</span></li>
+                            </ul>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <!--//sec04-->
+            
+            <section id="sec05">
+                <div class="membership-wrap">
+                    
+                    <div class="member-tit">
+                        
+                    <h2>MEMBERSHIP</h2>
+                    
+                    <p>커피니 멤버만 누릴 수 있는 혜택!</p>
+                        
+                    </div>
+                    
+                    <ol>
+                        <li class="line"><img src="mainimages/mbs_list01.png" alt="1번이미지"/>
+                            <p>커피니 매장 방문</p>
+                            <span>가까운 커피나 매장을<br> 방문하셔서 매장직원에게<br>신청서를 요청해주세요.</span>
+                        </li>
+                        <li class="line"><img src="mainimages/mbs_list02.png" alt="2번이미지"/>
+                            <p>멤버십 카드신청</p>
+                            <span>신청서에 간단히 성함과 <br> 연락처를 가입 해주세요</span>
+                        </li>
+                        <li class="line"><img src="mainimages/mbs_list03.png" alt="3번이미지"/>
+                            <p>카드 발급</p>
+                            <span>매장에서 즉시 카드를 <br> 발급하여 등록 해드립니다.</span>
+                        </li>
+                        <li class="none"><img src="mainimages/mbs_list04.png" alt="4번이미지"/>
+                            <p>가입 완료</p>
+                            <span>발급 즉시 <br> 바로 사용 가능합니다.</span>
+                        </li>
+                    </ol>
+                    
+                </div>
+            </section>
+            <!--//sec05-->
+            
+            <section id="sec06">
+                
+                <div class="map-wrap">
+                    <div class="map-tit">
+                        <h2>오시는길</h2>
+                    </div>
+                    
+                    <!-- * Daum 지도 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1535007158941" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1535007158941",
+                            "key" : "pnxj",
+                            "mapWidth" : "1100",
+                            "mapHeight" : "306"
+                        }).render();
+                    </script>
+                    
+                </div>
+            </section>
+            <!--//sec06-->
+
+            <footer>
+                
+                <div class="footer-wrap">
+                    
+                    <div class="address-wrap">
+
+                        <ul class="site">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">이용정책</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">제휴문의</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                        </ul>
+
+                        <address>서울시 강남구 학동로44길 29(논현동. 제이큐브빌딩 2층) (구)지번주소 : 서울시 강남구 논현동 251-6번지 제이큐브빌딩 2층</address>
+                        <p class="number">전화 : 02-546-1325    팩스 : 02-546-1335    사업자등록번호 : 123-56-123456</p>
+                        <p>COPYRIGHT ⓒ 2018 COFFEENIE ALL RIGHTS RESERVED.</p>
+
+                    </div>
+
+                    <div class="sns-wrap">
+
+                        <ul class="sns-btn">
+                            <li><a href="#" class="sns fb">페이스북이동</a></li>
+                            <li><a href="#" class="sns twt">트위터이동</a></li>
+                            <li><a href="#" class="sns blg">블로그이동</a></li>
+                            <li><a href="#" class="sns kic">KICC이동</a></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+                
+            </footer>
+            
+        </div>
+        <!--main-wrap e-->
+    </body>

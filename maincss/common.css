@@ -1,0 +1,100 @@
+*{margin: 0;padding: 0;}
+
+  li{list-style: none;}
+
+  a{text-decoration:none}
+
+  body,html{height:100%; width: 100%}
+
+  
+
+  /* top menu*/
+
+  
+
+  .menu{width:100%;z-index:999999;text-align:center;background-color:#fff;border-bottom:1px solid #e5e5e5;
+
+  overflow:hidden;}
+
+  .menu .nav{padding-top:16px;width:100%;font-weight:700;font-size:15px;color:#acb1b1;z-index:1;
+
+  text-transform:uppercase;letter-spacing:.5px;}
+
+  .menu .sub_logo{padding-top:19px;float:left;margin-left:40px;margin-right:-90px;opacity:1;margin-bottom:0;transition:all .3s ease-out}
+
+  .menu .nav ul{display:inline-block;width:500px; height:60px;}
+
+  .menu .nav ul li{display:inline-block; padding:20px}
+
+  .menu .nav ul li a{color:#acb1b1;transition:all .3s ease-out}
+
+  .menu .nav ul li a:hover{color:#fff;}
+
+  /* .menu .nav ul li a:hover{color:#4d4d4d} */
+
+  .menu .nav .sub_login{height:30%;padding-top:19px;margin-right:40px;float:right;margin-bottom:0;opacity:0.2;transition:all .3s ease-out}
+
+  .menu .nav .sub_login:hover{opacity:1;}
+
+  
+
+  /* 창을 줄일 때 바뀌는 css */
+
+
+
+  @media all and (max-width:640px){
+
+
+
+ 
+
+  .menu .sub_logo{display:none}
+
+  .menu .nav .sub_login{display:none}
+
+ 
+
+ }
+
+  
+
+  /* footer */
+
+
+
+  .footer{width:100%;text-align:center;position:relative;padding-top:60px; clear:both}
+
+  .footer .fot_menu>ul{text-align:center; width:100%;display:inline-block;padding-bottom:60px;border-top:solid 1px #e5e5e5}
+
+  .footer .fot_menu>ul>li{display:inline-block; padding:25px; }
+
+  .footer .fot_menu>ul>li>h1{font-size:20px; padding-top:20px;font-weight:700;color:#acb1b1}
+
+  .footer .fot_menu>ul>li>h1>a{display:inline-block; color:#acb1b1;transition:all .3s ease-out}
+
+ 
+
+  .footer .xx{display:block; position:absolute;text-align:center;width:100%;z-index:9999;margin-bottom:0; margin-top:-20px}
+
+  .footer .xx img{width:55px; height:55px;}
+
+  .footer .rooster h1{font-size:15px; font-weight:700;text-align:center;color:#cccccc;padding-bottom:40px}
+
+  .fot_bottom{background-color:#343433; height:135px; width:100%;text-align:center; color:#c9c9c9}
+
+  .footer .hireus .plan_button{width:290px; height:65px; padding:20px; border:2px solid #fff;
+
+  background:none;margin-top:37px;font-weight:700;font-size:16px;color:#acb1b1;transition:all .1s ease-out}
+
+  .credits{color:#898a8a;margin:-58px auto;font-size:14px;font-weight:700;padding-top:20px}
+
+  .credits .cre_left{float:left;margin-left:50px;margin-bottom:0;}
+
+  .credits .cre_left address{font-style: normal;}
+
+  .credits .cre_left address>a{color:#898a8a;transition:all .3s ease-out}
+
+  .credits .cre_right span{float:right;margin-right:50px;}
+
+  
+

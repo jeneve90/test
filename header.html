@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="maincss/default.css">
+    <link rel="stylesheet" type="text/css" href="maincss/main.css">
+    <link rel="stylesheet" type="text/css" href="maincss/reset.css">    
+    <script type="text/javascript" src="mainjs/jquery-3.3.1.min.js"></script>
+    <script src="mainjs/swiper.min.js"></script>
+    </head>
+    
+<nav id="gnb" class="">
+	<button class="totMenuBtn hideTxt" type="button" aria-controls="totMenu">전체 메뉴 열기</button>
+	<h2 class="hideEl">주 메뉴</h2>
+	<ul class="gnbList clearFix">
+		<li>
+			<a href="/" onclick="return false;">진료안내</a>
+			<!-- gnbLayerWrap01 -->
+			<div class="gnbLayerWrap01">
+				<!-- gnbLayerCol01 -->
+				<div class="gnbLayerCol01" style="height: 468px;">
+					<ul>
+						<li>
+							<!-- <a href="#">진료과/의료진</a> -->
+							<b>진료과/의료진</b>
+							<ul>
+								<li><a href="/reservation/meddept/main.do">본원</a></li>
+								<li><a href="/reservation/meddept/childMain.do">어린이병원</a></li>
+								<li><a href="/reservation/meddept/cancerMain.do">암병원</a></li>
+								<!--
+								<li><a href="/reservation/meddept/dept.do">주요부서</a></li>
+								<li><a href="/reservation/meddept/clinic.do">클리닉안내</a></li>
+								 -->
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="/reservation/reservation.do">인터넷 진료예약 <em class="gnbDot">Update</em></a></li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">예약확인/취소</a> -->
+							<b>예약확인/취소</b>
+							<ul>
+								<li><a href="/reservation/confirm/rsvConfirm.do">진료예약확인</a></li>
+								<li><a href="/reservation/confirm/ordConfirm.do">검진예약확인</a></li>
+								<li><a href="/reservation/confirm/medHistory.do">진료이력조회</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol01 -->
+				<!-- gnbLayerCol02 -->
+				<div class="gnbLayerCol02">
+					<ul>
+						<li>
+							<!-- <a href="#">외래진료안내</a> -->
+							<b>외래진료안내</b>
+							<ul>
+								<li><a href="/content/M001004001.do">진료안내</a></li>
+								<li><a href="/content/M001004005.do">예약안내</a></li>
+								<li><a href="/content/M001004010.do">심층진찰안내</a></li>
+								<li><a href="/content/M001004006.do">진료비 하이패스 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/content/M001004007.do">지역채혈안내</a></li>
+								<li><a href="/reservation/unPaid/list.do">비급여 진료비용</a></li>
+								<li><a href="/board/B009/list.do">진료안내 FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol02 -->
+				<!-- gnbLayerCol03 -->
+				<div class="gnbLayerCol03">
+					<ul>
+						<li>
+							<!-- <a href="#">입/퇴원안내</a> -->
+							<b>입/퇴원안내</b>
+							<ul>
+								<li><a href="/content/M001005001.do">입원절차</a></li>
+								<li><a href="/content/M001005002.do">퇴원절차</a></li>
+								<li><a href="/content/M001005003.do">입원생활안내</a></li>
+								<li><a href="/board/B053/list.do">입/퇴원절차 FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="/content/M001006001.do">가정간호안내</a> -->
+							<b>가정간호안내</b>
+							<ul>
+								<li><a href="/content/M001006001.do">가정간호 소개</a></li>
+								<li><a href="/content/M001006002.do">가정간호 내용</a></li>
+								<li><a href="/content/M001006003.do">가정간호 이용안내</a></li>
+								<li><a href="/board/B010/list.do">가정간호 FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<ul>
+						<li><a href="/content/M001009.do">공단건강검진 예약 <em class="gnbDot">Update</em></a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol03 -->
+				<!-- gnbLayerCont -->
+				<div class="gnbLayerCont">
+					<a href="//www.snuh.org/phr/myCareLogin.jsp" class="gnbBnrTxt01" target="_blank">
+						<strong>myCare(PHR)</strong>
+						진료이력조회&amp;<br>
+						건강수첩 서비스
+					</a>
+					<div class="btnWrap clearFix">
+						<a class="reservBtn01" href="/reservation/reservation.do"><b>인터넷 진료예약</b></a>
+						<a class="reservBtn02" href="/reservation/confirm/rsvConfirm.do"><b>예약확인 / 취소</b></a>
+					</div>
+					<ul class="phoneNum">
+						<li>
+							<span>대표전화</span>
+							<strong>1588 - 5700</strong>
+						</li>
+						
+					</ul>
+				</div>
+				<!-- //gnbLayerCont -->
+			</div>
+			<!-- //gnbLayerWrap01 -->
+		</li>
+		<li>
+			<a href="/" onclick="return false;">이용안내</a>
+			<!-- gnbLayerWrap02 -->
+			<div class="gnbLayerWrap02">
+				<!-- gnbLayerCol01 -->
+				<div class="gnbLayerCol01">
+					<ul>
+						<li>
+							<!-- <a href="#">위치안내</a> -->
+							<b>위치안내</b>
+							<ul>
+								<li><a href="/content/M002001001.do">오시는길</a></li>
+								<li><a href="/guide/inMap.do">원내위치도 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/content/M002001003.do">주차안내</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">편의시설</a> -->
+							<b>편의시설</b>
+							<ul>
+								<li><a href="/guide/convenience/internal/conveninList.do">원내 편의시설</a></li>
+								<li><a href="/guide/convenience/external/convenexList.do">주변 편의시설</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol01 -->
+				<!-- gnbLayerCol02 -->
+				<div class="gnbLayerCol02" style="height: 398px;">
+					<ul>
+						<li>
+							<!-- <a href="#">신청/발급안내</a> -->
+							<b>신청/발급안내</b>
+							<ul>
+								<li><a href="/content/M002005001.do">진료의뢰서 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/content/M002005002.do">진단서발급</a></li>
+								<li><a href="/content/M002005003.do">장애/병사/채용신체검사서</a></li>
+								<li><a href="/content/M002005004.do">진료비계산서</a></li>
+								<li><a href="/content/M002005005.do">처방전</a></li>
+								<li><a href="/content/M002005006.do">의무기록 열람/사본발급 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/content/M002005007.do">연말정산 진료비영수증</a></li>
+								<li><a href="/board/B052/list.do">제증명 FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol02 -->
+				<!-- gnbLayerCol03 -->
+				<div class="gnbLayerCol03">
+					<ul>
+						<li><a href="/content/M002003.do">문병안내</a></li>
+					</ul>
+					<ul>
+						<li><a href="/content/M002004.do">위임장/동의서안내</a></li>
+					</ul>
+					<ul>
+						<li><a href="/content/M002006.do">미국 이민 비자 신체검사</a></li>
+					</ul>
+					<ul>
+						<li><a href="/content/M002007.do">전화번호안내</a></li>
+					</ul>
+					<ul>
+						<li><a href="/board/B005/list.do">FAQ(통합)</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://sdoc.snuh.org" target="_blank">증명서 발급사이트</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol03 -->
+				<!-- gnbLayerCont -->
+				<div class="gnbLayerCont">
+					<a href="http://sdoc.snuh.org" target="_blank" class="gnbBnrTxt02">
+						<strong>증명서 발급사이트</strong>
+						병원발급서류를<br>홈페이지에서 받으세요.
+					</a>
+					<ul class="gnbFavLink clearFix">
+						<li class="item01"><a href="/content/M002001001.do" class="">오시는길</a></li>
+						<li class="item02"><a href="/content/M002004.do" class="">위임장 / 동의서</a></li>
+						<li class="item03"><a href="/board/B005/list.do" class="">자주묻는 질문</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCont -->
+			</div>
+			<!-- //gnbLayerWrap02 -->
+		</li>
+		<li>
+			<a href="/" onclick="return false;" class="">건강정보</a>
+			<!-- gnbLayerWrap03 -->
+			<div class="gnbLayerWrap03">
+				<!-- gnbLayerCol01 -->
+				<div class="gnbLayerCol01">
+					<ul>
+						<li><a href="/health/tv.do">건강TV</a></li>
+						<li class="gnbInfoLink01">
+							<a href="/health/tv.do">
+								<img src="/asset/img/common/img_gnbInfoLink01.jpg" alt="SNUH 건강톡톡">
+								<span>[ 124편 ] 연명의료결정법과 현실의 거리</span>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="/health/SelfDgs/main.do">자가진단서비스</a></li>
+					</ul>
+					<ul>
+						<li><a href="/health/encyclo/search.do">의학백과사전</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol01 -->
+				<!-- gnbLayerCol02 -->
+				<div class="gnbLayerCol02">
+					<ul>
+						<li><a href="/health/news.do">포스트 / 카드뉴스</a></li>
+						<li class="gnbInfoLink02">
+							<a href="/health/news.do">
+								<img src="/asset/img/common/img_gnbInfoLink02.jpg" alt="바른몸 튼튼건강">
+								<span>심해지는 관절통증, 혹시 류마티스 관절염?</span>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="/health/compreDis/compreDis.do">종합질병정보</a></li>
+					</ul>
+					<ul>
+						<li><a href="/board/B006/list.do">의료기기정보 <em class="gnbDot">Update</em></a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol02 -->
+				<!-- gnbLayerCol03 -->
+				<div class="gnbLayerCol03">
+					<ul>
+						<li><a href="/health/nMedInfo/nList.do">N의학정보</a></li>
+						<li class="gnbInfoLink03">
+							<a href="/health/nMedInfo/nList.do">
+								<img src="/asset/img/common/img_gnbInfoLink03.jpg" alt="N의학정보">
+								<span>사람 몸의 등뼈 부근에있는 대상포진이란?</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol03 -->
+				<!-- gnbLayerCont -->
+				<div class="gnbLayerCont">
+					<a href="http://m.post.naver.com/my.nhn?memberNo=3600238" class="gnbBnrTxt03" target="_blank">
+						<strong>SNUH 공식 블로그</strong>
+						서울대학교병원 의료진이<br>들려주는 건강정보를 얻을 수 있어요.
+					</a>
+					<a href="/reservation/meddept/clinic.do" class="gnbBnrTxt04">
+						<strong>클리닉 안내</strong>
+						질환별 전문치료를<br>위한 클리닉을 찾아보세요.
+					</a>
+				</div>
+				<!-- //gnbLayerCont -->
+			</div>
+			<!-- //gnbLayerWrap03 -->
+		</li>
+		<li>
+			<a href="/" onclick="return false;">고객참여</a>
+			<!-- gnbLayerWrap04 -->
+			<div class="gnbLayerWrap04" role="region" aria-hidden="true" aria-expanded="false" style="height: 0px; opacity: 0; display: none;">
+				<!-- gnbLayerCol01 -->
+				<div class="gnbLayerCol01" style="height: 398px;">
+					<ul>
+						<li>
+							<!-- <a href="#">고객의소리</a> -->
+							<b>고객의소리</b>
+							<ul>
+								<li><a href="/join/client.do">고객의소리 등록 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/content/M004001002.do">고객상담실 업무안내</a></li>
+								<!-- <li><a href="/join/client/praiseReg.do">감사합니다</a></li>
+								<li><a href="/join/client/complaintReg.do">건의합니다</a></li> -->
+								<li><a href="/join/client/praiseList.do">감사이야기</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<ul>
+						<li>
+							<!-- <a href="#">자원봉사센터</a> -->
+							<b>자원봉사센터</b>
+							<ul>
+								<li><a href="/join/volun/notice/list.do">모집공지 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/board/B008/list.do">갤러리</a></li>
+								<li><a href="/content/M004003003.do">자원봉사란?</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol01 -->
+				<!-- gnbLayerCol02 -->
+				<div class="gnbLayerCol02">
+					<ul>
+						<li>
+							<!-- <a href="#">후원</a> -->
+							<b>후원</b>
+							<ul>
+								<li><a href="http://www.snuhfund.com" target="_blank">발전후원회</a></li>
+								<li><a href="http://isupport.tistory.com" target="_blank">어린이후원회</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="/content/M004005.do">환자권리장전</a></li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">정보공개제도안내</a> -->
+							<b>정보공개제도안내</b>
+							<ul>
+								<li><a href="/content/M004006001.do">정보공개제도 안내</a></li>
+								<li><a href="/content/M004006002.do">정보공개목록</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- <ul>
+						<li><a href="/board/B056/list.do">파견/용역 업체 정규직 전환</a></li>
+					</ul> -->
+				</div>
+				<!-- //gnbLayerCol02 -->
+				<!-- gnbLayerCol03 -->
+				<div class="gnbLayerCol03">
+					<ul>
+						<li>
+							<!-- <a href="#">사업실명제</a> -->
+							<b>사업실명제</b>
+							<ul>
+								<li><a href="/content/M004007001.do">실명제 개요</a></li>
+								<li><a href="/join/busin/list.do">실명제 목록</a></li>
+								<li><a href="http://clean.snuh.org" target="_blank">클린센터 <em class="gnbDot">Update</em></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="http://web2.snuh.org/puzzle/" onclick="window.open(this.href, 'SNUHQuiz','width=900px, height=650px, scrollbars=0'); return false;">병원보 퀴즈</a></li>
+					</ul>
+					<ul>
+						<li><a href="/participation/poll/pollList.do">설문조사</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol03 -->
+				<!-- gnbLayerCont -->
+				<div class="gnbLayerCont">
+					<a href="/participation/poll/pollList.do" class="gnbBnrTxt05">
+						<strong>설문조사</strong>
+						새로운 병원 홈페이지<br>소중한 의견 작성해 주세요.
+					</a>
+					<ul class="gnbFavLink clearFix">
+						<li class="item04"><a href="http://www.snuhfund.com" target="_blank" class="">발전후원회</a></li>
+						<li class="item05"><a href="/content/M004003003.do" class="">자원봉사모집</a></li>
+						<li class="item06"><a href="http://web2.snuh.org/puzzle/" onclick="window.open(this.href, 'SNUHQuiz','width=900px, height=650px, scrollbars=0'); return false;" class="">병원보 퀴즈</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCont -->
+			</div>
+			<!-- //gnbLayerWrap04 -->
+		</li>
+		<li>
+			<a href="/" onclick="return false;">병원소개</a>
+			<!-- gnbLayerWrap05 -->
+			<div class="gnbLayerWrap05">
+				<!-- gnbLayerCol01 -->
+				<div class="gnbLayerCol01">
+					<ul>
+						<li>
+							<!-- <a href="#">병원역사</a> -->
+							<b>병원역사</b>
+							<ul>
+								<li><a href="/about/history/imageList.do">사진으로 보는 역사</a></li>
+								<li><a href="/content/M005002002.do">연혁 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/board/B001/list.do">제중원</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">병원장 인사말</a> -->
+							<b>병원장 인사말</b>
+							<ul>
+								<li><a href="/content/M005003001.do">인사말</a></li>
+								<li><a href="/content/M005003002.do">역대병원장</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol01 -->
+				<!-- gnbLayerCol02 -->
+				<div class="gnbLayerCol02">
+					<ul>
+						<li>
+							<!-- <a href="#">병원소식</a> -->
+							<b>병원소식</b>
+							<ul>
+								<li><a href="/board/B003/list.do?viewType=true">병원뉴스 <em class="gnbDot">Update</em></a></li>
+								<li><a href="/about/news/lecture/list.do">강좌안내</a></li>
+								<li><a href="/about/news/press/list.do">언론보도</a></li>
+								<li><a href="/about/news/newsPaper.do">병원신문</a></li>
+								<li><a href="/board/B004/list.do">입찰정보</a></li>
+								<li><a href="/about/news/recruit/recruList.do">채용공고 <em class="gnbDot">Update</em></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">정기간행물</a> -->
+							<b>정기간행물</b>
+							<ul>
+								<li><a href="/about/periodical/webzine/webzList.do">웹진</a></li>
+								<li><a href="/about/periodical/magazine/magazList.do">매거진 VOM</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol02 -->
+				<!-- gnbLayerCol03 -->
+				<div class="gnbLayerCol03">
+					<ul>
+						<li><a href="/content/M005009.do">병원개요</a></li>
+					</ul>
+					<ul>
+						<li><a href="/content/M005001.do">미션/비전</a></li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">조직도</a> -->
+							<b>조직도</b>
+							<ul>
+								<li><a href="/content/M005004001.do">조직도</a></li>
+								<li><a href="/content/M005004002.do">현황 및 통계</a></li>
+								<li><a href="/board/B002/list.do">국내외 유관기관</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<!-- <a href="#">HI/로고</a> -->
+							<b>HI/로고</b>
+							<ul>
+								<li><a href="/content/M005005001.do">HI소개</a></li>
+								<li><a href="/about/hi/list.do">HI / 캐릭터 / 기타</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="/about/gallery.do">갤러리</a></li>
+					</ul>
+				</div>
+				<!-- //gnbLayerCol03 -->
+				<!-- gnbLayerCont -->
+				<div class="gnbLayerCont">
+					<a href="/board/B001/list.do" class="gnbBnrTxt06 hideTxt">제중원 132</a>
+					<a href="http://recruit.snuh.org" target="_blank" class="gnbBnrTxt07">
+						<strong>채용사이트</strong>
+						귀중한 인재를<br>모집하고 있습니다.
+					</a>
+				</div>
+				<!-- //gnbLayerCont -->
+			</div>
+			<!-- //gnbLayerWrap05 -->
+		</li>
+	</ul>
+	<button class="totSearchBtn hideTxt" type="button" aria-controls="totSearch">전체 검색 레이어 열기</button>
+<div class="gnbBg" style="display: none; left: 505px; width: 72px; opacity: 1;"></div></nav>
